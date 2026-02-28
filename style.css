@@ -1,10 +1,44 @@
-.small{
-    width: 50px;
-    height: 50px;
-    padding-left: 10px;
+
+nav ul li {
+
+    text-decoration: none;
+}
+.logo-image{
+    width: 30px;
+    height: 40px;
 }
 
-.header{
-    text-align:top;
-    padding-left: 12px;
+nav {
+    margin-left: 3rem; /* bigger gap from logo */
+    font-size: 0.9rem; /* slightly smaller than logo */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding-right: 3rem; /* leave room on right for future title */
+}
+
+.logo {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
