@@ -1,8 +1,18 @@
 
 html,body { 
-    background-color:rgba (255,255,255,0.5 ) ;
+    background-color:rgba (255,255,255,0.65 ) ;
 }
+ section {
+    background-color: white;
+    margin: 500px;
+    
+ } 
 
+ section.photo {
+    position: relative;
+    margin: 0; /* remove default margin */
+    padding: 0; /* remove default padding */
+ }
   nav ul li{
 
     text-decoration: none;
@@ -48,6 +58,8 @@ header {
 }
  
 .footer {
+    display: flex;
+    flex-direction: column;
     background-color: blue;
     text-align: center;
     padding: 1rem;
@@ -72,4 +84,12 @@ header {
 }
 .footer .copy {
     margin-top: 1rem;
+}
+footer .map {
+    background-image: url('https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i9790150&2i8478645&2e1&3u16&4m2&1u554&2u500&5m6&1e0&5sen&6srw&10b1&12b1&14i47083502&8e1&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=38271');
+    background-size: cover;
+    width: 50%;
+    height:auto;
+    text-align: start;
+    
 }
