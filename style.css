@@ -1,95 +1,143 @@
 
 html,body { 
-    background-color:rgba (255,255,255,0.65 ) ;
+     background-color:rgba (255,255,255,0.65 ) ;
+}
+header {
+     background-color:white;
+     padding-bottom: 8px;
+     align-items: center;
+      margin: 0px;
+     height: 40px;
+      border: none;
 }
  section {
-    background-color: white;
-    margin: 500px;
+     background-color: white;
+     margin: 8px;
+     height: auto;
+
+    
     
  } 
 
- section.photo {
-    position: relative;
-    margin: 0; /* remove default margin */
-    padding: 0; /* remove default padding */
+ section .photo {
+     height: 200px;
+     width:100%; 
+     position:relative;
+     top: 0;
  }
-  nav ul li{
 
-    text-decoration: none;
+ section .card {
+     background-color: white;
+     display: inline-block;
+      gap: 1rem;
+ }
+#home .card {
+     display:inline-block;
+     background-color: white;
+     gap: 1rem;
+     margin: 1rem;
 }
+#home .photo rgba {
+     height: 500px;
+     width:100%; 
+     position:relative;
+     top: 0;
+}
+    
+  nav ul li{
+     color: black;
+     text-decoration: none;
+}
+
 .logo-image{
-    width: 30px;
-    height: 40px;
-}
+     width: 30px;
+     height: 40px;
+} 
 
 nav {
-    margin-left: 3rem; /* bigger gap from logo */
-    font-size: 0.9rem; /* slightly smaller than logo */
+     margin-left: 3rem; /* bigger gap from logo */
+     font-size: 0.9rem; /* slightly smaller than logo */
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     gap: 1rem;
+     align-items: center;
 }
 
 nav ul li a {
-    color: black;
-    text-decoration: none;
+     color: black;
+     text-decoration: none;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    padding-right: 3rem; /* leave room on right for future title */
+nav ul li a:hover {
+     color: blue;
 }
+nav ul li a.active {
+     color: blue;
+     font-weight: bold;
+}
+
 
 .logo {
-    margin-left: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+     margin-left: 2rem;
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
 }
  
 .footer {
-    display: flex;
-    flex-direction: column;
-    background-color: blue;
-    text-align: center;
+     display: fixed;
+     flex-direction: column;
+     background-color: blue;
     padding: 1rem;
     margin-top: 2rem;
 }
 .footer h2 {
-    color: darkblue;
+     color: darkblue;
 }
 .footer p {
-    color: white;
+     color: white;
 }
-.footer a {
-    color:white;
+ .footer a {
+     color:white;
+ }
+ .footer a:hover {
+     color: darkblue;
+ }
+ .footer .links {
+     display: flex;
+    justify-content: left;
+     gap: 1rem;
+ }
+  .footer .copy {
+     margin-top: 1rem;
+ }
+ footer .map {
+      background-image: url('https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i9790150&2i8478645&2e1&3u16&4m2&1u554&2u500&5m6&1e0&5sen&6srw&10b1&12b1&14i47083502&8e1&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=38271');
+     width: 50%;
+     height:auto;
+     text-align-last: right;
+     padding-left: 0px;
+     align-content: flex-start;
 }
-.footer a:hover {
-    color: darkblue;
-}
-.footer .links {
+
+footer .contact {
+
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-.footer .copy {
-    margin-top: 1rem;
-}
-footer .map {
-    background-image: url('https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i9790150&2i8478645&2e1&3u16&4m2&1u554&2u500&5m6&1e0&5sen&6srw&10b1&12b1&14i47083502&8e1&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=38271');
-    background-size: cover;
-    width: 50%;
-    height:auto;
-    text-align: start;
+    flex-direction: column;
+    gap: 0.5rem;
     
+}
+
+footer .contact a {
+    color:white;
+
+}
+footer .contact a:active {
+    border: 1px solid skyblue;
+    color: blue;
 }
